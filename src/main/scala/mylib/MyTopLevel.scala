@@ -28,7 +28,7 @@ object MyTopLevelVerilog {
   }
 }
 
-object MySpinalConfig extends SpinalConfig(defaultConfigForClockDomains = ClockDomainConfig(resetKind = SYNC))
+object MySpinalConfig extends SpinalConfig(defaultConfigForClockDomains = ClockDomainConfig(resetActiveLevel = LOW))
 
 object MyTopLevelVerilogWithCustomConfig {
   def main(args: Array[String]) {
