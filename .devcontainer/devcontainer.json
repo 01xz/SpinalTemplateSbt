@@ -1,0 +1,21 @@
+{
+  "name": "spinalhdl-container",
+  "build": {
+    "dockerfile": "Dockerfile",
+    "args": {}
+  },
+  "settings": {},
+  "extensions": [],
+  "mounts": [],
+  "runArgs": [
+    "-h",
+    "spinalhdl-container",
+    "--name",
+    "spinalhdl-container",
+    "-v",
+    "/etc/timezone:/etc/timezone:ro",
+    "-v",
+    "/etc/localtime:/etc/localtime:ro"
+  ],
+  "remoteUser": "vscode"
+}
